@@ -43,9 +43,7 @@ function Form() {
         className={`w-full ${errors.lastname ? "border-2" : "border"} ${
           errors.lastname ? "border-softRed" : "border-desaturatedRed"
         } rounded-md mb-3 pt-4 pb-3 px-6  xl:pt-4 xl:pb-3
-   placeholder-customGrayishBlue font-medium ${
-     errors.lastname ? "border-customRed" : ""
-   } ${
+    font-medium ${errors.lastname ? "border-customRed" : ""} ${
           errors.lastname
             ? "placeholder-customRed"
             : "placeholder-customGrayishBlue"
@@ -66,9 +64,9 @@ function Form() {
         className={`w-full ${errors.email ? "border-2" : "border"} ${
           errors.email ? "border-customRed" : ""
         } rounded-md mb-3 pt-4 pb-3 px-6  xl:pt-4 xl:pb-3
-   placeholder-customGrayishBlue font-medium ${
-     errors.email ? "placeholder-customRed" : "placeholder-customGrayishBlue"
-   } `}
+    font-medium ${
+      errors.email ? "placeholder-customRed" : "placeholder-customGrayishBlue"
+    } `}
       />
       {errors.email && <Errors email={"true"} />}
 
@@ -83,9 +81,7 @@ function Form() {
         className={`w-full ${errors.password ? "border-2" : "border"} ${
           errors.password ? "border-softRed" : "border-desaturatedRed"
         } rounded-md mb-3 pt-4 pb-3 px-6  xl:pt-4 xl:pb-3
-   placeholder-customGrayishBlue font-medium ${
-     errors.email ? "border-customRed" : ""
-   } ${
+    font-medium ${errors.email ? "border-customRed" : ""} ${
           errors.password
             ? "placeholder-customRed"
             : "placeholder-customGrayishBlue"
