@@ -46,7 +46,7 @@ function Form() {
    placeholder-customGrayishBlue font-medium ${
      errors.lastname ? "border-customRed" : ""
    } ${
-          errors.firstname
+          errors.lastname
             ? "placeholder-customRed"
             : "placeholder-customGrayishBlue"
         } `}
@@ -67,9 +67,7 @@ function Form() {
           errors.email ? "border-customRed" : ""
         } rounded-md mb-3 pt-4 pb-3 px-6  xl:pt-4 xl:pb-3
    placeholder-customGrayishBlue font-medium ${
-     errors.firstname
-       ? "placeholder-customRed"
-       : "placeholder-customGrayishBlue"
+     errors.email ? "placeholder-customRed" : "placeholder-customGrayishBlue"
    } `}
       />
       {errors.email && <Errors email={"true"} />}
@@ -88,7 +86,7 @@ function Form() {
    placeholder-customGrayishBlue font-medium ${
      errors.email ? "border-customRed" : ""
    } ${
-          errors.firstname
+          errors.password
             ? "placeholder-customRed"
             : "placeholder-customGrayishBlue"
         }`}
